@@ -14,14 +14,12 @@ const render = () => {
 
     container.innerHTML = "";
 
-    container.insertAdjacentHTML("beforeend", `
+    container.insertAdjacentHTML("afterbegin", `
         <svg class="dice dice-red">
-          <use href="sprites.svg#dice-${player1}-icon"></use>
+            <use href="sprites.svg#dice-${player1}-icon"></use>
         </svg>
-    `)
-    container.insertAdjacentHTML("beforeend", `
         <svg class="dice dice-blue">
-          <use href="sprites.svg#dice-${player2}-icon"></use>
+            <use href="sprites.svg#dice-${player2}-icon"></use>
         </svg>
     `)
 
